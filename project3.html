@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel = "stylesheet" type="text/css" href = "styleSheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="/path/to/jquery.min.js"></script>
+  	<script src="/path/to/moment.min.js"></script>
+ 	<script src="ez.countimer.js"></script>
+	
+
+	<title>Project 3 / Sliding Game</title>
+</head>
+<body>
+
+<audio controls> 
+	<source src="countdown.mp3" type="audio/mpeg">
+</audio>
+	<center>
+	<label id="extraFeats"> The extra features are: (1) Multiple backgrounds, (2)Timer with music file, (3) <br></label>
+	<label id="minutes">00</label>:<label id="seconds">00</label>
+	
+	<form> <label>Background: </label> 
+		    <input type="radio" name="option" value="bl" id="bl">Borderlands
+            <input type="radio" name="option" value="halo" id="halo">Halo
+			<input type="radio" name="option" value="gta" id="mk">Mortal Kombat
+			<input type="radio" name="option" value="gta" id="gta">GTA
+			<input type="radio" name="option" value="gow" id="gow">God of War 
+			<input type="button" name="Confirm" value="Confirm" class="subButton"></form> 
+				
+	
+	<table id="table">
+		<tr id="r1">
+			<td id="r1c1" class="cell1" onclick="click(1,1)"></td>
+			<td id="r1c2" class="cell2" onclick="click(1,2)"></td>
+			<td id="r1c3" class="cell3" onclick="click(1,3)"></td>
+			<td id="r1c4" class="cell4" onclick="click(1,4)"></td>
+		</tr>
+		<tr id="r2">
+			<td id="r2c1" class="cell5" onclick="click(2,1)"></td>
+			<td id="r2c2" class="cell6" onclick="click(2,2)"></td>
+			<td id="r2c3" class="cell7" onclick="click(2,3)"></td>
+			<td id="r2c4" class="cell8" onclick="click(2,4)"></td>
+		</tr>
+		<tr id="r3">
+			<td id="r3c1" class="cell9" onclick="click(3,1)"></td>
+			<td id="r3c2" class="cell10" onclick="click(3,2)"></td>
+			<td id="r3c3" class="cell11" onclick="click(3,3)"></td>
+			<td id="r3c4" class="cell12" onclick="click(3,4)"></td>
+		</tr>
+		<tr id="r4">
+			<td id="r4c1" class="cell13" onclick="click(4,1)"></td>
+			<td id="r4c2" class="cell14" onclick="click(4,2)"></td>
+			<td id="r4c3" class="cell15" onclick="click(4,3)"></td>
+			<td id="r4c4" class="cell16" onclick="click(4,4)"></td>
+		</tr>
+	</table>
+
+
+	<table id="gow_table">
+    <tr id="r1">
+      <td id="r1c1" class="gow1" onclick="click(1,1)"></td>
+      <td id="r1c2" class="gow2" onclick="click(1,2)"></td>
+      <td id="r1c3" class="gow3" onclick="click(1,3)"></td>
+      <td id="r1c4" class="gow4" onclick="click(1,4)"></td>
+    </tr>
+    <tr id="r2">
+      <td id="r2c1" class="gow5" onclick="click(2,1)"></td>
+      <td id="r2c2" class="gow6" onclick="click(2,2)"></td>
+      <td id="r2c3" class="gow7" onclick="click(2,3)"></td>
+      <td id="r2c4" class="gow8" onclick="click(2,4)"></td>
+    </tr>
+    <tr id="r3">
+      <td id="r3c1" class="gow9" onclick="click(3,1)"></td>
+      <td id="r3c2" class="gow10" onclick="click(3,2)"></td>
+      <td id="r3c3" class="gow11" onclick="click(3,3)"></td>
+      <td id="r3c4" class="gow12" onclick="click(3,4)"></td>
+    </tr>
+    <tr id="r4">
+      <td id="r4c1" class="gow13" onclick="click(4,1)"></td>
+      <td id="r4c2" class="gow14" onclick="click(4,2)"></td>
+      <td id="r4c3" class="gow15" onclick="click(4,3)"></td>
+      <td id="r4c4" class="gow16" onclick="click(4,4)"></td>
+    </tr>
+  </table>
+  
+  
+  <table id="gta_table">
+    <tr id="r1">
+      <td id="r1c1" class="gta1" onclick="click(1,1)"></td>
+      <td id="r1c2" class="gta2" onclick="click(1,2)"></td>
+      <td id="r1c3" class="gta3" onclick="click(1,3)"></td>
+      <td id="r1c4" class="gta4" onclick="click(1,4)"></td>
+    </tr>
+    <tr id="r2">
+      <td id="r2c1" class="gta5" onclick="click(2,1)"></td>
+      <td id="r2c2" class="gta6" onclick="click(2,2)"></td>
+      <td id="r2c3" class="gta7" onclick="click(2,3)"></td>
+      <td id="r2c4" class="gta8" onclick="click(2,4)"></td>
+    </tr>
+    <tr id="r3">
+      <td id="r3c1" class="gta9" onclick="click(3,1)"></td>
+      <td id="r3c2" class="gta10" onclick="click(3,2)"></td>
+      <td id="r3c3" class="gta11" onclick="click(3,3)"></td>
+      <td id="r3c4" class="gta12" onclick="click(3,4)"></td>
+    </tr>
+    <tr id="r4">
+      <td id="r4c1" class="gta13" onclick="click(4,1)"></td>
+      <td id="r4c2" class="gta14" onclick="click(4,2)"></td>
+      <td id="r4c3" class="gta15" onclick="click(4,3)"></td>
+      <td id="r4c4" class="gta16" onclick="click(4,4)"></td>
+    </tr>
+  </table>
+  
+  
+  <table id="halo_table">
+    <tr id="a1">
+      <td id="a1c1" class="halo1" onclick="click(1,1)"></td>
+      <td id="a1c2" class="halo2" onclick="click(1,2)"></td>
+      <td id="a1c3" class="halo3" onclick="click(1,3)"></td>
+      <td id="a1c4" class="halo4" onclick="click(1,4)"></td>
+    </tr>
+    <tr id="a2">
+      <td id="a2c1" class="halo5" onclick="click(2,1)"></td>
+      <td id="a2c2" class="halo6" onclick="click(2,2)"></td>
+      <td id="a2c3" class="halo7" onclick="click(2,3)"></td>
+      <td id="a2c4" class="halo8" onclick="click(2,4)"></td>
+    </tr>
+    <tr id="a3">
+      <td id="a3c1" class="halo9" onclick="click(3,1)"></td>
+      <td id="a3c2" class="halo10" onclick="click(3,2)"></td>
+      <td id="a3c3" class="halo11" onclick="click(3,3)"></td>
+      <td id="a3c4" class="halo12" onclick="click(3,4)"></td>
+    </tr>
+    <tr id="a4">
+      <td id="a4c1" class="halo13" onclick="click(4,1)"></td>
+      <td id="a4c2" class="halo14" onclick="click(4,2)"></td>
+      <td id="a4c3" class="halo15" onclick="click(4,3)"></td>
+      <td id="a4c4" class="cell16" onclick="click(4,4)"></td>
+    </tr>
+  </table>
+  
+
+  <table id="mk_table">
+    <tr id="r1">
+      <td id="r1c1" class="mk1" onclick="click(1,1)"></td>
+      <td id="r1c2" class="mk2" onclick="click(1,2)"></td>
+      <td id="r1c3" class="mk3" onclick="click(1,3)"></td>
+      <td id="r1c4" class="mk4" onclick="click(1,4)"></td>
+    </tr>
+    <tr id="r2">
+      <td id="r2c1" class="mk5" onclick="click(2,1)"></td>
+      <td id="r2c2" class="mk6" onclick="click(2,2)"></td>
+      <td id="r2c3" class="mk7" onclick="click(2,3)"></td>
+      <td id="r2c4" class="mk8" onclick="click(2,4)"></td>
+    </tr>
+    <tr id="r3">
+      <td id="r3c1" class="mk9" onclick="click(3,1)"></td>
+      <td id="r3c2" class="mk10" onclick="click(3,2)"></td>
+      <td id="r3c3" class="mk11" onclick="click(3,3)"></td>
+      <td id="r3c4" class="mk12" onclick="click(3,4)"></td>
+    </tr>
+    <tr id="r4">
+      <td id="r4c1" class="mk13" onclick="click(4,1)"></td>
+      <td id="r4c2" class="mk14" onclick="click(4,2)"></td>
+      <td id="r4c3" class="mk15" onclick="click(4,3)"></td>
+      <td id="r4c4" class="mk16" onclick="click(4,4)"></td>
+    </tr>
+  </table>
+	
+	<input type="button" name="newGame" value="New Game!" class="shuffle">
+	</center>
+	
+	
+	<script type="text/javascript" src="project3.js"></script>
+</body>
+</html>
+	

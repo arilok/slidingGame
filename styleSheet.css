@@ -1,0 +1,736 @@
+.shuffle{
+	font-size: xx-large;
+}
+#table{
+	
+}
+
+#mk_table{
+	display: none;
+}
+
+#halo_table{
+	display: none;
+}
+
+#gta_table{
+	display: none;
+}
+
+#gow_table{
+	display: none;
+}
+
+.cell1{
+	background: url(bl.jpg);
+	background-position: 0 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cell2{
+	background: url(bl.jpg);
+	background-position: 33% 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cell3{
+	background: url(bl.jpg);
+	background-position: 66% 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cell4{
+	background: url(bl.jpg);
+	background-position: 100% 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cell5{
+	background: url(bl.jpg);
+	background-position: 0 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cell6{
+	background: url(bl.jpg);
+	background-position: 33% 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cell7{
+	background: url(bl.jpg);
+	background-position: 66% 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cell8{
+	background: url(bl.jpg);
+	background-position: 100% 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cell9{
+	background: url(bl.jpg);
+	background-position: 0 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cell10{
+	background: url(bl.jpg);
+	background-position: 33% 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cell11{
+	background: url(bl.jpg);
+	background-position: 66% 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cell12{
+	background: url(bl.jpg);
+	background-position: 100% 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cell13{
+	background: url(bl.jpg);
+	background-position: 0% 100%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cell14{
+	background: url(bl.jpg);
+	background-position: 33% 100%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cell15{
+	background: url(bl.jpg);
+	background-position: 66% 100%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.cell16{
+	width: 280px;
+	height: 200px;
+	background: white;
+	background-position: 100% 100%;
+}
+
+.mk1{
+	background: url(mk.jpg);
+	background-position: 0 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.mk2{
+	background: url(mk.jpg);
+	background-position: 33% 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.mk3{
+	background: url(mk.jpg);
+	background-position: 66% 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.mk4{
+	background: url(mk.jpg);
+	background-position: 100% 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.mk5{
+	background: url(mk.jpg);
+	background-position: 0 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.mk6{
+	background: url(mk.jpg);
+	background-position: 33% 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.mk7{
+	background: url(mk.jpg);
+	background-position: 66% 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.mk8{
+	background: url(mk.jpg);
+	background-position: 100% 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.mk9{
+	background: url(mk.jpg);
+	background-position: 0 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.mk10{
+	background: url(mk.jpg);
+	background-position: 33% 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.mk11{
+	background: url(mk.jpg);
+	background-position: 66% 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.mk12{
+	background: url(mk.jpg);
+	background-position: 100% 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.mk13{
+	background: url(mk.jpg);
+	background-position: 0% 100%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.mk14{
+	background: url(mk.jpg);
+	background-position: 33% 100%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.mk15{
+	background: url(mk.jpg);
+	background-position: 66% 100%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.mk16{
+	width: 280px;
+	height: 200px;
+	background: white;
+	background-position: 100% 100%;
+}
+
+
+.halo1{
+	background: url(halo.jpg);
+	background-position: 0 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.halo2{
+	background: url(halo.jpg);
+	background-position: 33% 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.halo3{
+	background: url(halo.jpg);
+	background-position: 66% 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.halo4{
+	background: url(halo.jpg);
+	background-position: 100% 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.halo5{
+	background: url(halo.jpg);
+	background-position: 0 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.halo6{
+	background: url(halo.jpg);
+	background-position: 33% 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.halo7{
+	background: url(halo.jpg);
+	background-position: 66% 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.halo8{
+	background: url(halo.jpg);
+	background-position: 100% 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.halo9{
+	background: url(halo.jpg);
+	background-position: 0 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.halo10{
+	background: url(halo.jpg);
+	background-position: 33% 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.halo11{
+	background: url(halo.jpg);
+	background-position: 66% 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.halo12{
+	background: url(halo.jpg);
+	background-position: 100% 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.halo13{
+	background: url(halo.jpg);
+	background-position: 0% 100%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.halo14{
+	background: url(halo.jpg);
+	background-position: 33% 100%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.halo15{
+	background: url(halo.jpg);
+	background-position: 66% 100%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.halo16{
+	width: 280px;
+	height: 200px;
+	background: white;
+	background-position: 100% 100%;
+}
+
+.gow1{
+	background: url(gow.jpg);
+	background-position: 0 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gow2{
+	background: url(gow.jpg);
+	background-position: 33% 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gow3{
+	background: url(gow.jpg);
+	background-position: 66% 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gow4{
+	background: url(gow.jpg);
+	background-position: 100% 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gow5{
+	background: url(gow.jpg);
+	background-position: 0 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gow6{
+	background: url(gow.jpg);
+	background-position: 33% 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gow7{
+	background: url(gow.jpg);
+	background-position: 66% 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gow8{
+	background: url(gow.jpg);
+	background-position: 100% 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gow9{
+	background: url(gow.jpg);
+	background-position: 0 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gow10{
+	background: url(gow.jpg);
+	background-position: 33% 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gow11{
+	background: url(gow.jpg);
+	background-position: 66% 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gow12{
+	background: url(gow.jpg);
+	background-position: 100% 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gow13{
+	background: url(gow.jpg);
+	background-position: 0% 100%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gow14{
+	background: url(gow.jpg);
+	background-position: 33% 100%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gow15{
+	background: url(gow.jpg);
+	background-position: 66% 100%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gow16{
+	width: 280px;
+	height: 200px;
+	background: white;
+	background-position: 100% 100%;
+}
+
+.gta1{
+	background: url(gta.jpg);
+	background-position: 0 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gta2{
+	background: url(gta.jpg);
+	background-position: 33% 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gta3{
+	background: url(gta.jpg);
+	background-position: 66% 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gta4{
+	background: url(gta.jpg);
+	background-position: 100% 0;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gta5{
+	background: url(gta.jpg);
+	background-position: 0 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gta6{
+	background: url(gta.jpg);
+	background-position: 33% 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gta7{
+	background: url(gta.jpg);
+	background-position: 66% 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gta8{
+	background: url(gta.jpg);
+	background-position: 100% 33%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gta9{
+	background: url(gta.jpg);
+	background-position: 0 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gta10{
+	background: url(gta.jpg);
+	background-position: 33% 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gta11{
+	background: url(gta.jpg);
+	background-position: 66% 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gta12{
+	background: url(gta.jpg);
+	background-position: 100% 66%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gta13{
+	background: url(gta.jpg);
+	background-position: 0% 100%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gta14{
+	background: url(gta.jpg);
+	background-position: 33% 100%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gta15{
+	background: url(gta.jpg);
+	background-position: 66% 100%;
+	border: 1px solid white;
+	width: 280px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.gta16{
+	width: 280px;
+	height: 200px;
+	background: white;
+	background-position: 100% 100%;
+}
+
+
+
