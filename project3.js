@@ -87,7 +87,6 @@ function clickCell(row, column){
 	var j = parseInt(column,10)-1;
 	var w = parseInt(row,10)+1;
 	var z = parseInt(row,10)-1;
-	document.getElementById("extraFeats").innerHTML = i;
 
  	if (tile!="cell16") { 
        if (column<4) {
