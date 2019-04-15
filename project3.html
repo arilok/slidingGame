@@ -16,7 +16,7 @@
 	<source src="countdown.mp3" type="audio/mpeg">
 </audio>
 	<center>
-	<label id="extraFeats"> The extra features are: (1) Multiple backgrounds, (2)Timer with music file, (3) <br></label>
+	<label id="extraFeats"> The extra features are: (1) Multiple backgrounds, (2)Timer with music file, (3)3x3 Board <br></label>
 	<label id="minutes">00</label>:<label id="seconds">00</label>
 	
 	<form> <label>Background: </label> 
@@ -24,8 +24,11 @@
             <input type="radio" name="option" value="halo" id="halo">Halo
 			<input type="radio" name="option" value="gta" id="mk">Mortal Kombat
 			<input type="radio" name="option" value="gta" id="gta">GTA
-			<input type="radio" name="option" value="gow" id="gow">God of War 
+			<input type="radio" name="option" value="gow" id="gow">God of War
+      <input type="radio" name="option" value="3" id="3">3x3 
 			<input type="button" name="Confirm" value="Confirm" class="subButton"></form> 
+      
+
 				
 	
 	<table id="table">
@@ -54,6 +57,28 @@
 			<td id="r4c4" class="cell16" onclick="clickCell('4','4')"></td>
 		</tr>
 	</table>
+  <table id="table2">
+    <tr id="r1">
+      <td id="r1c1" class="celll1" onclick="clickCell()"></td>
+      <td id="r1c2" class="celll2" onclick="clickCell()"></td>
+      <td id="r1c3" class="celll3" onclick="clickCell()"></td>
+      
+    </tr>
+    <tr id="r2">
+      <td id="r2c1" class="celll4" onclick="clickCell()"></td>
+      <td id="r2c2" class="celll5" onclick="clickCell()"></td>
+      <td id="r2c3" class="celll6" onclick="clickCell()"></td>
+      
+    </tr>
+    <tr id="r3">
+      <td id="r3c1" class="celll7" onclick="clickCell()"></td>
+      <td id="r3c2" class="celll8" onclick="clickCell()"></td>
+      <td id="r3c3" class="celll9" onclick="clickCell()"></td>
+      
+    </tr>
+    
+  </table>
+
 
 
 

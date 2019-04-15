@@ -1,5 +1,6 @@
 $(document).ready(function(){
 //Changes the background images
+	
 $('.subButton').click(function(){
 	
   if ($('#mk').is(':checked')){
@@ -8,13 +9,19 @@ $('.subButton').click(function(){
 	$("#gow_table").hide();
 	$("#gta_table").hide();
 	$("#mk_table").show();
+	$("#table2").hide();
 
-	} if ($('#bl').is(':checked')){
+
+	}
+
+	 if ($('#bl').is(':checked')){
 		$("#mk_table").hide();
 		$("#table").show();
 		$("#gow_table").hide();
 		$("#gta_table").hide();
 		$("#halo_table").hide();
+		$("#table2").hide();
+		
 
 	} if($('#gta').is(':checked')){
 		$("#gta_table").show();
@@ -22,6 +29,8 @@ $('.subButton').click(function(){
 		$("#halo_table").hide();
 	    $("#gow_table").hide();
 		$("#table").hide();
+		$("#table2").hide();
+	
 		
 	}if($('#halo').is(':checked')){
 		$("#halo_table").show();
@@ -29,6 +38,8 @@ $('.subButton').click(function(){
 		$("#gta_table").hide();
 		$("#gow_table").hide();
 		$("#table").hide();
+		$("#table2").hide();
+		
 		
 	}if($('#gow').is(':checked')){
 		$("#mk_table").hide();
@@ -36,8 +47,19 @@ $('.subButton').click(function(){
 		$("#table").hide();
 		$("#gta_table").hide();
 		$("#halo_table").hide();
+		$("#table2").hide();
+		
+	}if($('#3').is(':checked')){
+		$("#mk_table").hide();
+		$("#gow_table").hide();
+		$("#table").hide();
+		$("#gta_table").hide();
+		$("#halo_table").hide();
+		$("#table2").show();
+		
 	}
   });
+
 });
 
 var minutesLabel = document.getElementById("minutes");
@@ -79,6 +101,7 @@ $('.shuffle').click(function(){
 	}
 });
 
+
 //Checks for empty space near the clicked cell 
 function clickCell(row, column){
 	var cell = document.getElementById("r"+row+"c"+column);
@@ -87,6 +110,8 @@ function clickCell(row, column){
 	var j = parseInt(column,10)-1;
 	var w = parseInt(row,10)+1;
 	var z = parseInt(row,10)-1;
+	document.getElementById("extraFeats").innerHTML = i;
+
 
  	if (tile!="cell16") { 
        if (column<4) {

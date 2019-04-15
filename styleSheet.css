@@ -1,9 +1,11 @@
 .shuffle{
 	font-size: xx-large;
 }
-#table{
-	
+
+#table2{
+	display: none;
 }
+
 
 #mk_table{
 	display: none;
@@ -28,6 +30,8 @@
 	width: 280px;
 	height: 200px;
 	cursor: pointer;
+
+	
 }
 
 .cell2{
@@ -37,6 +41,8 @@
 	width: 280px;
 	height: 200px;
 	cursor: pointer;
+	
+	
 }
 
 .cell3{
@@ -46,6 +52,8 @@
 	width: 280px;
 	height: 200px;
 	cursor: pointer;
+
+
 }
 
 .cell4{
@@ -55,6 +63,8 @@
 	width: 280px;
 	height: 200px;
 	cursor: pointer;
+	
+
 }
 
 .cell5{
@@ -64,6 +74,7 @@
 	width: 280px;
 	height: 200px;
 	cursor: pointer;
+	
 }
 
 .cell6{
@@ -73,6 +84,7 @@
 	width: 280px;
 	height: 200px;
 	cursor: pointer;
+	
 }
 
 .cell7{
@@ -162,6 +174,92 @@
 	background: white;
 	background-position: 100% 100%;
 }
+.celll1{
+	background: url(bl.jpg);
+	background-position: 0 0;
+	border: 1px solid white;
+	width: 400px;
+	height: 267px;
+	cursor: pointer;
+	
+}
+
+.celll2{
+	background: url(bl.jpg);
+	background-position: 50% 0;
+	border: 1px solid white;
+	width: 400px;
+	height: 267px;
+	cursor: pointer;
+
+	
+}
+
+.celll3{
+	background: url(bl.jpg);
+	background-position: 100% 0%;
+	border: 1px solid white;
+	width: 400px;
+	height: 267px;
+	cursor: pointer;
+
+
+}
+
+.celll4{
+	background: url(bl.jpg);
+	background-position: 0% 50%;
+	border: 1px solid white;
+	width: 400px;
+	height: 267px;
+	cursor: pointer;
+
+
+}
+
+.celll5{
+	background: url(bl.jpg);
+	background-position: 50% 50%;
+	border: 1px solid white;
+	width: 400px;
+	height: 267px;
+	cursor: pointer;
+
+}
+
+.celll6{
+	background: url(bl.jpg);
+	background-position: 100% 50%;
+	border: 1px solid white;
+	width: 400px;
+	height: 267px;
+	cursor: pointer;
+
+}
+
+.celll7{
+	background: url(bl.jpg);
+	background-position: 0% 100%;
+	border: 1px solid white;
+	width: 400px;
+	height: 267px;
+	cursor: pointer;
+}
+
+.celll8{
+	background: url(bl.jpg);
+	background-position: 50% 100%;
+	border: 1px solid white;
+	width: 400px;
+	height: 267px;
+	cursor: pointer;
+}
+
+
+
+
+
+
 
 .mk1{
 	background: url(mk.jpg);
