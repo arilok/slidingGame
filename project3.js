@@ -81,43 +81,49 @@ $('.shuffle').click(function(){
 
 //Checks for empty space near the clicked cell 
 function clickCell(row, column){
-	var cell = document.getElementById("r"+row+"c"+column).className;
+	var cell = document.getElementById("r"+row+"c"+column);
 	var tile = cell.className;
-	document.getElementById("extraFeats").innerHTML = row +" "+ column;
+	var i = parseInt(column,10)+1;
+	var j = parseInt(column,10)-1;
+	var w = parseInt(row,10)+1;
+	var z = parseInt(row,10)-1;
+	document.getElementById("extraFeats").innerHTML = i;
 
  	if (tile!="cell16") { 
        if (column<4) {
-         if ( document.getElementById("r"+row+"c"+(column+1))=="cell16") {
+       	 
+         if ( document.getElementById("r"+row+"c"+i).className=="cell16") {
            	var temp = document.getElementById("r"+row+"c"+column).className;
-  			document.getElementById("r"+row+"c"+column).className = document.getElementById("r"+row+"c"+(column+1)).className;
-  			document.getElementById("r"+row+"c"+(column+1)).className = temp;
+  			document.getElementById("r"+row+"c"+column).className = document.getElementById("r"+row+"c"+i).className;
+  			document.getElementById("r"+row+"c"+i).className = temp;
            return;
          }
        }
        if (column>1) {
-         if ( document.getElementById("r"+row+"c"+(column-1))=="cell16") {
+         if ( document.getElementById("r"+row+"c"+j).className=="cell16") {
            	var temp = document.getElementById("r"+row+"c"+column).className;
-  			document.getElementById("r"+row+"c"+column).className = document.getElementById("r"+row+"c"+(column-1)).className;
-  			document.getElementById("r"+row+"c"+(column-1)).className = temp;
-           return;
-         }
-       }
-       if (row>1) {
-         if ( document.getElementById("r"+(row-1)+"c"+column)=="cell16") {
-           	var temp = document.getElementById("r"+row+"c"+column).className;
-  			document.getElementById("r"+row+"c"+column).className = document.getElementById("r"+(row+1)+"c"+column).className;
-  			document.getElementById("r"+(row+1)+"c"+column).className = temp;
+  			document.getElementById("r"+row+"c"+column).className = document.getElementById("r"+row+"c"+j).className;
+  			document.getElementById("r"+row+"c"+j).className = temp;
            return;
          }
        }
        if (row<4) {
-         if ( document.getElementById("r"+(row+1)+"c"+column)=="cell16") {
+         if ( document.getElementById("r"+w+"c"+column).className=="cell16") {
            	var temp = document.getElementById("r"+row+"c"+column).className;
-  			document.getElementById("r"+row+"c"+column).className = document.getElementById("r"+(row-1)+"c"+column).className;
-  			document.getElementById("r"+(row-1)+"c"+column).className = temp;
+  			document.getElementById("r"+row+"c"+column).className = document.getElementById("r"+w+"c"+column).className;
+  			document.getElementById("r"+w+"c"+column).className = temp;
            return;
          }
        } 
+       if (row>1) {
+         if ( document.getElementById("r"+z+"c"+column).className=="cell16") {
+           	var temp = document.getElementById("r"+row+"c"+column).className;
+  			document.getElementById("r"+row+"c"+column).className = document.getElementById("r"+z+"c"+column).className;
+  			document.getElementById("r"+z+"c"+column).className = temp;
+           return;
+         }
+       }
+       
   }
 }
 
