@@ -62,15 +62,18 @@ $('.subButton').click(function(){
 
 });
 
-var minutesLabel = document.getElementById("minutes");
-var secondsLabel = document.getElementById("seconds");
+var min = document.getElementById("min");
+var sec = document.getElementById("sec");
 var totalSeconds = 0;
 setInterval(setTime, 1000);
 //sets timer
 function setTime() {
-  ++totalSeconds;
-  secondsLabel.innerHTML = pad(totalSeconds % 60);
-  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+  ++totalSeconds
+;
+  sec.innerHTML = pad(totalSeconds
+ % 60);
+  min.innerHTML = pad(parseInt(totalSeconds
+ / 60));
 }
 
 function pad(val) {
@@ -84,8 +87,8 @@ function pad(val) {
 
 //shuffles the cells
 $('.shuffle').click(function(){
-	document.getElementById("minutes").innerHTML = "00";
-	document.getElementById("seconds").innerHTML = "00";
+	document.getElementById("min").innerHTML = "00";
+	document.getElementById("sec").innerHTML = "00";
 	totalSeconds = 0;
 	var i, x;
 	var j, y;

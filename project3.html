@@ -12,25 +12,27 @@
 </head>
 <body>
 
-<audio controls> 
-	<source src="countdown.mp3" type="audio/mpeg">
-</audio>
 	<center>
-	<label id="extraFeats"> The extra features are: (1) Multiple backgrounds, (2)Timer with music file, (3)3x3 Board <br></label>
-	<label id="minutes">00</label>:<label id="seconds">00</label>
-	
-	<form> <label>Background: </label> 
-		    <input type="radio" name="option" value="bl" id="bl">Borderlands
-            <input type="radio" name="option" value="halo" id="halo">Halo
-			<input type="radio" name="option" value="gta" id="mk">Mortal Kombat
-			<input type="radio" name="option" value="gta" id="gta">GTA
-			<input type="radio" name="option" value="gow" id="gow">God of War
-      <input type="radio" name="option" value="3" id="3">3x3 
-			<input type="button" name="Confirm" value="Confirm" class="subButton"></form> 
-      
+  	<h4 id="select">
+    <form> <label>Background: </label> 
+        <input type="radio" name="option" value="bl" id="bl"><img src="blradio.png">
+        <input type="radio" name="option" value="halo" id="halo"><img src="haloradio.png">
+        <input type="radio" name="option" value="gta" id="mk"><img src="mkradio.png">
+        <input type="radio" name="option" value="gta" id="gta"><img src="gtaradio.png">
+        <input type="radio" name="option" value="gow" id="gow"><img src="gowradio.png">
+        <input type="radio" name="option" value="3" id="3">3x3 
+        <input type="button" name="Confirm" value="Confirm" class="subButton"></form> </h4>
+        </center>
 
+  <audio controls> 
+    <source src="countdown.mp3" type="audio/mpeg">
+  </audio>
+      
+  <h3 id="timer">
+    <label id="min">00</label>:<label id="sec">00</label>
+  </h3>
 				
-	
+	<center>
 	<table id="table">
 		<tr id="r1">
 			<td id="r1c1" class="cell1" onclick="clickCell('1','1')"></td>
